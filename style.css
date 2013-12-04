@@ -1,0 +1,20 @@
+/*
+	Fichier Mise en page
+	style.css
+-------------------------
+	Nicolas Thouvenin
+*/
+
+body
+{
+	background-color:#E0CDA9;
+	background-image:url("ressources/maison.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size:65% 65%;
+	background-origin:content-box;
+	background-clip:content-box;
+	margin-left:250px;
+
+}
