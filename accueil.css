@@ -1,0 +1,100 @@
+/*
+	Fichier Mise en page
+	style.css
+-------------------------
+	Nicolas Thouvenin
+*/
+
+#image
+{
+	display: block;
+	margin: auto;
+	height: 750px;
+	width: 1100px;
+	border-radius: 10px;
+	background: url('ressources/maison.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	position: relative;
+	box-shadow: 0px 4px 4px #1c1a19;
+}
+
+#titre
+{
+	display: block;
+	border: 2px solid; /*white;*/
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    width: 98.5%;
+    height: 50px;
+    padding-left: 1.5%;
+	padding-bottom: 30px;
+    background-color: rgb(24,24,24); /* Pour IE */
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+}
+
+#menu
+{
+	display: block;
+/*	border: 2px solid red;*/
+}
+
+.menu_button
+{
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	border-radius: 0px 0px 9px 9px;
+	text-indent:0px;
+	border:1px solid #dcdcdc;
+	/*position: relative;*/
+	color:#777777;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	height: 35px;
+	line-height: 35px;
+	width:145px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 0px 0px #ffffff;
+}
+
+.menu_button:hover
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+
+.menu_button:active
+{
+	position:relative;
+	top:1px;
+	user-select: none;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+li
+{
+	display: inline-block;
+	font-size: 1.2em;
+	color: white;
+}
+
+body
+{
+	background-color:#E0CDA9;
+}

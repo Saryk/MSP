@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">   <!-- encodage briseur de génitrices -->
+		<title>Maison de Santé Pluridisciplinaire du Pays de Coise</title>	<!-- et bim -->
+		<link rel="stylesheet" type="text/css" href="accueil.css" />
+		<script>
+            window.onload = function() {
+                var labels = document.getElementsByClassName('nosel');
+                for (var i = 0; i < labels.length; i++) {
+                    disableSelection(labels[i]);
+                }
+            };
+            function disableSelection(element) {
+                if (typeof element.onselectstart != 'undefined') {
+                    element.onselectstart = function() { return false; };
+                } else if (typeof element.style.MozUserSelect != 'undefined') {
+                    element.style.MozUserSelect = 'none';
+                } else {
+                    element.onmousedown = function() { return false; };
+                }
+            }
+        </script>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="image">
+			<div id="titre">
+				<h1 class="nosel"> Maison de Santé Pluridisciplinaire En Pays de Coise </h1>
+			</div>
+			<nav>
+				<ul class="nosel" id="menu">
+					<li class="menu_button">
+						<a id="menu-1" href="#" onclick="alert('Wow');">Menu 1</a>
+					</li>
+					<li class="menu_button">
+						<a id="menu-2" href="#" onclick="alert('Much Page');">Menu 2</a>
+					</li>
+					<li class="menu_button">
+						<a id="menu-3" href="#" onclick="alert('Such Button');">Menu 3</a>
+					</li>
+					<li class="menu_button">
+						<a id="menu-4" href="#" onclick="alert('So Internet');">Menu 4</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!--
+		<p>
+			<h3>Ceci est le futur site de l'Association Pour La Création De La Maison De Santé Pluridisciplinaire En Pays De Coise</h3>
+			Le site est actuellement en cours de conception
+		</p>
+		-->
+	</body>
+</html>
