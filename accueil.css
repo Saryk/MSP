@@ -22,22 +22,20 @@
 #titre
 {
 	display: block;
-	border: 2px solid; /*white;*/
-    position: relative;
-    border-radius: 10px 10px 0px 0px;
-    width: 98.5%;
-    height: 50px;
-    padding-left: 1.5%;
+	position: relative;
+	border-radius: 10px 10px 0px 0px;
+	width: 98.5%;
+	height: 50px;
+	padding-left: 1.5%;
 	padding-bottom: 30px;
-    background-color: rgb(24,24,24); /* Pour IE */
-    background-color: rgba(24,24,24,0.8);
-    color: white;
+	background-color: rgb(24,24,24); /* Pour IE */
+	background-color: rgba(24,24,24,0.8);
+	color: white;
 }
 
 #menu
 {
 	display: block;
-/*	border: 2px solid red;*/
 }
 
 .menu_button
