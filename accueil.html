@@ -20,15 +20,43 @@
                     element.onmousedown = function() { return false; };
                 }
             }
-        </script>
+       
+			var link = document.getElementById('menu-6'),
+			link.onclick = function()
+				{
+					displayImg(this);
+					return false;
+				};
+			}
+				
+			function displayImg(link) {
+				var img = new Image();
+				function displayImg(link) {
+					var img = new Image(),
+					overlay = document.getElementById('overlay');
+					img.onload = function() {
+					overlay.innerHTML = '';
+					overlay.appendChild(img);
+					};
+				img.src = link.href;
+				overlay.style.display = 'block';
+				overlay.innerHTML = '<span>Chargement en cours...</span>';
+				}
+				img.src = link.href;
+			}
+			
+			document.getElementById('overlay').onclick = function() {
+			this.style.display = 'none';
+			};
+		</script>
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body class="nosel">
 		<div id="image">
-			<div id="titre">
-				<h1 class="nosel"> Maison de Santé Pluridisciplinaire En Pays de Coise </h1>
+			<div id="banniere">
+				<h1 class="nosel" id="titre"> Maison de Santé Pluridisciplinaire En Pays de Coise </h1>
 			</div>
 			<nav>
 				<ul class="nosel" id="menu">
@@ -47,9 +75,13 @@
 					<li class="menu_button" onclick="alert('So javascript');">
 						<a id="menu-5" href="#">Menu 5</a>
 					</li>
+					<li class="menu_button" id="menu-6">
+						<a href="ressources/doge.jpg">Menu 6</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
+		<div id="overlay"></div>
 		<!--
 		<p>
 			<h3>Ceci est le futur site de l'Association Pour La Création De La Maison De Santé Pluridisciplinaire En Pays De Coise</h3>
