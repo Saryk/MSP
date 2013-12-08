@@ -26,6 +26,7 @@
 	border-radius: 10px 10px 0px 0px;
 	width: 98.5%;
 	height: 50px;
+	padding-top: 10px; 
 	padding-left: 1.5%;
 	padding-bottom: 30px;
 	background-color: rgb(24,24,24); /* Pour IE */
@@ -35,6 +36,7 @@
 
 #menu
 {
+	margin-top: 0px;
 	display: block;
 }
 
@@ -50,7 +52,6 @@
 	border-radius: 0px 0px 9px 9px;
 	text-indent:0px;
 	border:1px solid #dcdcdc;
-	/*position: relative;*/
 	color:#777777;
 	font-family:Trebuchet MS;
 	font-size:18px;
@@ -75,8 +76,7 @@
 .menu_button:active
 {
 	position:relative;
-	top:1px;
-	user-select: none;
+	height: 40px;
 }
 
 a
